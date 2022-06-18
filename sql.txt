@@ -1,0 +1,10 @@
+create table usuario(
+	id_usuario int IDENTITY(1,1),
+	name_usuario varchar(100),
+	last_name_usuario varchar(100),
+	email_usuario varchar(100),
+	password_usuario varchar(500),
+	edad_usuario int,
+	status_usuario varchar(10),
+	PRIMARY KEY(id_usuario)
+);

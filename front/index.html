@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contenedor-login">
+      <div class="centrar-login">
+        <h1 class="login-titulo">Banco Pichincha</h1>
+        <form>
+          <div class="input-usuario">
+            <label class="login-label" for="inputUsuario">Usuario</label>
+            <input
+              class="login-input"
+              type="text"
+              name="usuario"
+              placeholder="Ingresa el usuario"
+              id = "inputUsuario"
+            />
+            <span
+            class="login-alert"
+            id="alertUsuario"
+              ></span
+            >
+          </div>
+          <div class="input-usuario">
+            <label class="login-label" for="inputContrasena">Contraseña</label>
+            <input
+              class="login-input"
+              type="password"
+              name="contraseña"
+              placeholder="Ingresa la contraseña"
+              id = "inputContrasena"
+            />
+            <span
+            class="login-alert"
+            id = "alertContrasena"
+            ></span
+          >
+          </div>
+          <button class="login-button" id="botonIniciarSesion">
+            <i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="footer-span">Desarrollado por Byron Delgado</span>
+    </footer>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+:root{
+    --color-pichincha-amarillo: #FFDD00;
+    --color-pichincha-azul:#0F265C;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo{
+    color: var(--color-pichincha-azul);
+    border-bottom: 1px solid #ffdd00;
+    padding: 10px;
+    margin-top: 0;
+    width: max-content;
+}
+.btn-cerrar-sesion{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-cerrar-sesion:hover{
+    background-color: rgb(219, 0, 0);
+}
+
+.usuarios-lista{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.usuarios-tarjeta{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 4px rgba(58, 58, 58, 0.399);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.usuarios-tarjeta:hover{
+    background-color: rgb(237, 237, 237);
+}
+
+.usuarios-tarjeta-nombre{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--color-pichincha-azul);
+}
+.status{
+    padding: 0px 5px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-weight: 400;
+    width: 70px;
+    display: inline-block;
+}
+.activo{
+    background-color: rgb(76, 223, 36);
+    border: 2px solid rgb(31, 230, 84);
+}
+
+.inactivo{
+    background-color: rgb(238, 212, 63);
+    border: 2px solid rgb(230, 230, 31);
+}
+
+.footer{
+    background-color: var(--color-pichincha-amarillo);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    .usuarios-lista{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .usuarios-lista{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    body{
+        width: 100%;
+    }
+}
